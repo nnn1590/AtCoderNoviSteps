@@ -38,6 +38,7 @@ export async function getTaskResults(userId: string): Promise<TaskResults> {
       const status = statusById.get(answer.status_id);
       taskResult.status_name = status.status_name;
       taskResult.submission_status_image_path = status.image_path;
+      taskResult.submission_status_label_name = status.label_name;
       taskResult.is_ac = status.is_ac;
     }
 
@@ -67,6 +68,7 @@ export async function getTaskResultsOnlyResultExists(userId: string): Promise<Ta
     const status = statusById.get(answer.status_id);
     taskResult.status_name = status.status_name;
     taskResult.submission_status_image_path = status.image_path;
+    taskResult.submission_status_label_name = status.label_name;
     taskResult.is_ac = status.is_ac;
     taskResult.updated_at = answer.updated_at;
 
@@ -91,6 +93,7 @@ export function createDefaultTaskResult(userId: string, task: Task): TaskResult 
     status_id: '4',
     status_name: 'ns', // FIXME: Use const
     submission_status_image_path: 'ns.png',
+    submission_status_label_name: '未挑戦',
     is_ac: false,
     updated_at: new Date(),
   };
@@ -121,6 +124,7 @@ export async function getTaskResult(slug: string, userId: string) {
   taskResult.status_id = status.status_id;
   taskResult.status_name = status.status_name;
   taskResult.submission_status_image_path = status.image_path;
+  taskResult.submission_status_label_name = status.label_name;
   taskResult.is_ac = status.is_ac;
   taskResult.user_id = userId;
 
@@ -195,6 +199,7 @@ export async function getTasksWithTagIds(
       const status = statusById.get(answer.status_id);
       taskResult.status_name = status.status_name;
       taskResult.submission_status_image_path = status.image_path;
+      taskResult.submission_status_label_name = status.label_name;
       taskResult.is_ac = status.is_ac;
       taskResult.user_id = userId;
     }

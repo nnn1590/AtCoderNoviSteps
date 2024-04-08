@@ -93,7 +93,7 @@ export function createDefaultTaskResult(userId: string, task: Task): TaskResult 
     status_id: '4',
     status_name: 'ns', // FIXME: Use const
     submission_status_image_path: 'ns.png',
-    submission_status_label_name: '未提出',
+    submission_status_label_name: '未挑戦',
     is_ac: false,
     updated_at: new Date(),
   };

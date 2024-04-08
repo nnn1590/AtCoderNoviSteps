@@ -21,7 +21,7 @@
         <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=plastic" alt="License: MIT" />
     </a>
     <a href="https://twitter.com/acnovisteps">
-        <img src="https://img.shields.io/twitter/follow/acnovisteps?style=social&logo=twitter" alt="AtCoder NoviSteps" />
+        <img src="https://img.shields.io/twitter/follow/acnovisteps?style=social&logo=twitter" alt="Follow @acnovisteps on Twitter" />
     </a>
 </p>
 
